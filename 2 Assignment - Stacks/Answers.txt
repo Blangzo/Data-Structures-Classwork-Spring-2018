@@ -1,0 +1,10 @@
+Assignment 2 - Generic Stacks Answers - Wesley Ho
+
+1. The array approach is faster for small amounts of pushes
+2. The array approach is faster for small amounts of pops.
+3. The linked approach is faster for a medium number of pushes but the array approach is faster for a very large number of pushes
+4. The array approach is faster for a medium number of pops but the linked approach is faster for a large number of pops
+5. For pushing: The array approach is faster for a small quantities because object creation is expensive in comparison to just putting something into an array. The linked approach is faster for medium sized quantities becuase copying arrays is also very expensive, however, in very large arrays, it is slower because my increasecapacity method for the array approach doubles the capacity bc I'm lazy, meaning that it starts copying the array fewer and fewer times while the linked approach still has to create each object in constant time, which ends up being more expensive
+For pops: The linked approach is slower because it is faster to simply return a value at an index in an array and reduce an integer by one than to also set 2 variables.
+The only surprising result was the difference in time between the small number of pushes (23) in comparison to the medium number of pushes which made absolutely no sense. Each time I ran the test, the linked approach actually took longer to push 23 numbers than 1000 numbers.
+6. The tradeoffs that need to be considered in these implementations are time and memory. The array approach is faster for larger quantities and for known quantities but can waste memory whereas the linked approach is faster for medium sized and unknown quantities.

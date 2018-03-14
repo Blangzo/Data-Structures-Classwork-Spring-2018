@@ -1,0 +1,9 @@
+In a single run:
+--Insertion Sort: 2222 moves, 194370 ns
+--Selection Sort: 99 moves, 122964 ns
+--Merge Sort: 1444 moves, 82963 ns
+
+-Those tests were run with array size of 100. Merge sort should be the fastest, however since we are dealing with small arrays of 100, insertion sort is often faster when the array is almsot sorted. The number of moves for insertion sort should be large because the number of moves can go up to n^2 due to the algorithm. Selection is 99 because it only moves each number once, and to the exactly correct position except for the last number which is assumed to be in the correct position. Merge sort is exactly 1444 because it is a logarithmic algorithm that, like selection sort, runs the same way every time.
+When using larger array sizes, the runtime is very different. MergeSort quickly shows itself to be the fastest due to its nlog(n) nature. My insertion sort however, ends up being slower than my selection sort algorithm. I would have assumed insertion sort to be faster since it is possible for it to run fewer than n^2 times whereas selection sort must run n^2 times every time. I think that this is because insertion sort requires far more moves which ends up taking a large amount of time whereas selection sort only takes more comparisons.
+
+-Merge sort has the advantage of only taking nlog(n) time as well as using fewer swaps than insertion sort. This is because of the way the algorithm breaks up the array into smaller pieces before putting it back together. Since each time, the algorithm divides by 2, the sort has a runtime of nlog(n) rather than n^2.
