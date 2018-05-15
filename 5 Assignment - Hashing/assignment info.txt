@@ -1,0 +1,25 @@
+Due Date
+Friday, March 16, 2018
+9:00 AM
+**********************************************************************************
+The purpose of this assignment is to give you practice writing hashing functions and storing objects in a Hash Set.
+**********************************************************************************
+Attached you will find 3 classes.  For ProductRecord and Student, review the code and try to understand what the class might be used for.  Think about how a hash function should be implemented for each of the classes.  Implement the hashCode method for each of these.
+**********************************************************************************
+Once you've finished writing a hashCode method for Student and ProductRecord, create a Hash Set class for storing Student objects.  This Hash Set should use a linear probing collision resolution strategy.
+**********************************************************************************
+When you're finished, submit your 3 Java files and the answers to the following questions in a .txt file:
+
+Why do we implement hashCode on individual objects, instead of centrally?  For example, why don't we create a new class with a method like getHashCodeFor(Object obj) for many different objects, or implement hashing functions in the hash table itself?
+Can you create a hashing function for an object that only has transient / mutable data?  Why or why not?
+Let's say we have an object that has limited variability in its data - say, only 1000 possible combinations of values.  Can we create a hash code for such an object?  Why or why not?
+**********************************************************************************
+Grading:
+25 points - code compiles and public method names are unchanged
+3 points - Hash code for ProductRecord: is repeatable, has few collisions
+3 points - Hash code for Student: is repeatable, has few collisions
+8 points - StudentSet is implemented properly with linear probing and passes tests
+2 points - answer to question 1
+2 points - answer to question 2
+2 points - answer to question 3
+5 points - style / grader's discretion

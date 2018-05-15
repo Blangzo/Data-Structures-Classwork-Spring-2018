@@ -1,0 +1,7 @@
+Wesley Ho - Assignment 5
+
+1. We implement the hashCode method on individual objects rather than centrally because each object is comprised of different amounts and types of data. This means that the hashCode method on each object must consider different things when creating the hashcode for that object.
+
+2. Yes. But it won't be good or useful and you would not be able to create a functional HashTable with it. For example, you can create a HashCode for a container. When you run the HashCode method, it will return a HashCode based on the data it contains. When it changes however, its HashCode would also change. As a result, a functional HashTable would be impossible to make since data would not be retrievable if the HashCode of the object changed.
+
+3. Yes. This would be very easy to create. The HashCode method for an object with say, only 1000 possible combinations of values could simply be 1 - 1000 based on an algorithm that takes in the data held by the object.
